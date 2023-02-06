@@ -18,3 +18,39 @@ public MainWindow()
 }
 ```
 
+-----
+
+`ListBox` with similar content.
+
+```xaml
+<ListBox x:Name="list">
+	<ListBoxItem>
+		<StackPanel Orientation="Horizontal">
+			<Border
+				Width="10"
+				Height="10"
+				Background="Red" />
+			<TextBlock Margin="10,0" Text="Red" />
+		</StackPanel>
+	</ListBoxItem>
+	<ListBoxItem>
+		<StackPanel Orientation="Horizontal">
+			<Border
+				Width="10"
+				Height="10"
+				Background="Green" />
+			<TextBlock Margin="10,0" Text="Green" />
+		</StackPanel>
+	</ListBoxItem> 
+	<ListBoxItem>
+		<StackPanel Orientation="Horizontal">
+			<Border
+				Width="10"
+				Height="10"
+				Background="Blue" />
+			<TextBlock Margin="10,0" Text="Blue" />
+		</StackPanel>
+	</ListBoxItem>
+</ListBox>
+```
+
