@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTemplate", "DataTemplat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Binding", "Binding\Binding.csproj", "{431FCEBB-8EDC-4875-9539-60259EEC6748}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command", "Command\Command.csproj", "{83B23C22-755F-43AF-80C9-6B4D55678A33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Command", "Command\Command.csproj", "{83B23C22-755F-43AF-80C9-6B4D55678A33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notify", "Notify\Notify.csproj", "{00959DA6-5A9A-47A4-8CA5-24AAEE2DBA0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{83B23C22-755F-43AF-80C9-6B4D55678A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83B23C22-755F-43AF-80C9-6B4D55678A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83B23C22-755F-43AF-80C9-6B4D55678A33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00959DA6-5A9A-47A4-8CA5-24AAEE2DBA0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00959DA6-5A9A-47A4-8CA5-24AAEE2DBA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00959DA6-5A9A-47A4-8CA5-24AAEE2DBA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00959DA6-5A9A-47A4-8CA5-24AAEE2DBA0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
