@@ -8,9 +8,8 @@ using System.Windows;
 
 namespace Notify
 {
-	public class MainViewModel : ViewModelBase
+	public class MainViewModel : MyViewModelBase
 	{
-
 		private string? _name;
 
 		public CommandForward ClickCommand { get; set; }

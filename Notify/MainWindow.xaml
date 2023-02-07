@@ -22,5 +22,13 @@
                 Command="{Binding ClickCommand}"
                 Content="General Grievous" />
         </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox Text="{Binding Line}" />
+            <Button
+                Width="Auto"
+                Height="40"
+                Command="{Binding MvvmClickCommand}"
+                Content="General Grievous" />
+        </StackPanel>
     </Grid>
 </Window>
