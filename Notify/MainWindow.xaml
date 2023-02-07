@@ -23,11 +23,19 @@
                 Content="General Grievous" />
         </StackPanel>
         <StackPanel Grid.Column="1">
-            <TextBox Text="{Binding Line}" />
+            <TextBox
+                Height="40"
+                Margin="10"
+                Text="{Binding Line}" />
+            <TextBox
+                x:Name="textInput"
+                Height="40"
+                Margin="10" />
             <Button
                 Width="Auto"
                 Height="40"
                 Command="{Binding MvvmClickCommand}"
+                CommandParameter="{Binding ElementName=textInput, Path=Text}"
                 Content="General Grievous" />
         </StackPanel>
     </Grid>

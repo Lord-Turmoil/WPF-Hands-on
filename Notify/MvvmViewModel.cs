@@ -1,5 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Messaging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace Notify
 		public MvvmViewModel()
 		{
 			Line = "Your move.";
-			MvvmClickCommand = new RelayCommand(OnMvvmClickAction);
+			MvvmClickCommand = new RelayCommand<string>(OnMvvmClickAction);
 		}
 
 		public string Line
@@ -29,13 +30,16 @@ namespace Notify
 			}
 		}
 
-		public RelayCommand MvvmClickCommand { get; }
+		public RelayCommand<string> MvvmClickCommand { get; }
 
-		public void OnMvvmClickAction()
+		public void OnMvvmClickAction(string content)
 		{
 			Line = "Click OK";
-			MessageBox.Show("Clicked the button, you have.");
+			MessageBox.Show(content);
 			Line = "You fool!";
+
+			// Token must correspond each other.
+			Messenger.Default.Send<string>(content, "Token");
 		}
 	}
 }

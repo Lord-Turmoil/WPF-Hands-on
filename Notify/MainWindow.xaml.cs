@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.Messaging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +25,14 @@ namespace Notify
 		{
 			InitializeComponent();
 			// this.DataContext = new MainViewModel();
-			this.DataContext = new MvvmViewModel(); 
+			this.DataContext = new MvvmViewModel();
+
+			Messenger.Default.Register<string>(this, "Token", ShowMessage);
+		}
+
+		public void ShowMessage(string content)
+		{
+			MessageBox.Show(content);
 		}
 	}
 }
